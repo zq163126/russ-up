@@ -49,7 +49,7 @@ def run():
                 # 3. 截图反馈
                 page.wait_for_timeout(2000)
                 page.screenshot(path=screenshot_path)
-                send_tg_photo(screenshot_path, f"账号 {acc['user']} 已使用语义化定位点击成功")
+              #  send_tg_photo(screenshot_path, f"账号 {acc['user']} 已使用语义化定位点击成功")
                 
             except Exception as e:
                 page.screenshot(path=screenshot_path)
